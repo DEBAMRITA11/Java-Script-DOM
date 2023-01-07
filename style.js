@@ -50,3 +50,84 @@
 // const id2 = document.getElementById("id2");
 // console.log(id2.innerText);
 // id2.setAttribute("class", "class2");
+
+//9. querySelector
+//Examole 1
+// const tag1 = document.querySelector("h1");
+// console.log(tag1);
+// //Examole 2
+// const class1 = document.querySelector(".class1");
+// console.log(class1);
+// //Example 3
+// const id1 = document.querySelector("#id2");
+// console.log(id2);
+
+// querySelectorAll
+// const tag1 = document.querySelectorAll("h1");
+// console.log(tag1[0].innerText);
+
+// const class1 = document.querySelectorAll(".class1");
+// console.log(class1);
+
+//Different between nodelist and HTML collection:
+//getquereySelection show us nodelist and other's show us HTML collection.
+
+// const tag2 = document.getElementsByTagName("h1");
+// console.log(tag2);
+// const class2 = document.getElementsByClassName("class1");
+// console.log(class2);
+
+//10. childNodes (we can find any attributes's inner information types)
+// const id1 = document.getElementById("id1");
+// console.log(id1);
+// console.log(id1.childNodes);
+
+//11. children
+// const id1 = document.getElementById("list-id");
+// console.log(id1);
+// console.log(id1.children);
+
+//12. creatElement
+// const newList = document.createElement("li");
+// newList.innerHTML = "List 5"
+// console.log(newList.innerText);
+
+//13. appendChild
+// const newList = document.createElement("li");
+// newList.innerText = "List 5"
+// const listId = document.getElementById("list-id");
+// listId.appendChild(newList);
+
+//Example 2
+// const id1 = document.getElementById("div-text");
+// const newHeading = document.createElement("h2");
+// newHeading.innerText = "This is heading Two";
+// id1.appendChild(newHeading);
+
+//14. removeChild
+// const id1 = document.getElementById("list-id");
+// console.log(id1);
+// const list1 = id1.children[0];
+// console.log(list1.innerText);
+// id1.removeChild("list1");
+
+//15. replaceChild
+// const id1 = document.getElementById("list-id");
+// const list3 = id1.children[2];
+// const newList = document.createElement("li");
+// newList.innerText = ("New List");
+// console.log(newList.innerText);
+// id1.replaceChild(newList, list3);
+
+//16. title 
+// console.log(document.title);
+// document.title = "New JaveScript Title";
+
+//17. body 
+// console.log(document.body);
+// document.body.innerHTML = "<h1>This is only JavaScript Heading</h1>";
+
+//innerText Vs innerHTML
+//const id1 = document.getElementById("id1");
+//id1.innerHTML = "<p>This is a paragraph</p>";
+//id1.innerText = "<p>This is a paragraph</p>";
